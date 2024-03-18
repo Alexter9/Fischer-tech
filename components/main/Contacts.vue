@@ -22,6 +22,7 @@ const itemsRight = [
   {
     heading: 'telegram',
     text: '@FischerTech',
+    link: 'https://t.me/FischerTech',
   },
   // {
   //   heading: '',
