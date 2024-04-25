@@ -58,7 +58,7 @@ const items = [
 
 <template>
   <article class="flex flex-col gap-8 text-secondary font-500 text-left leading-6 desktop:(gap-10)">
-    <h3 class="text-white text-6 font-700 desktop:(text-24 leading-24)">
+    <h3 class="text-white text-6 font-700 desktop:(text-20 leading-20)">
       Инфраструктура
     </h3>
 

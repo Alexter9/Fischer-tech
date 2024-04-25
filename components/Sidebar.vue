@@ -21,7 +21,7 @@ watch(isSwiping, (val) => {
   >
     <div class="relative flex flex-col justify-center items-center h-full">
       <div class="fixed right-2 top-2 md:(right-18 top-4)">
-        <UiIcon name="arrow" @click="toggleSidebar" />
+        <UiIcon name="arrow" class="text-primary" @click="toggleSidebar" />
       </div>
 
       <nav class="flex flex-col gap-10 overflow-y-auto text-center uppercase">

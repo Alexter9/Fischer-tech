@@ -1,5 +1,8 @@
 <script setup>
-const { showSidebar } = storeToRefs(useAppStore())
+const appStore = useAppStore()
+
+const { toggleOrderModal } = appStore
+const { showSidebar, showOrderModal } = storeToRefs(appStore)
 
 const route = useRoute()
 
@@ -22,13 +25,21 @@ const imageClass = computed(() => {
     <header class="flex flex-col items-center h-80 md:h-100 lg:h-117 xl:h-160">
       <Navbar class="absolute! z-1" />
       <div
-        class="w-full max-w-[1440px] h-full px-10 pb-22.5 flex items-end md:(px-21 pb-15) xl:(pb-37) desktop:(px-30 pb-25)"
+        class="w-full max-w-[1440px] h-full px-10 pb-10 flex flex-col justify-end gap-5 md:(px-21 pb-15 gap-8) xl:(pb-37 gap-12) desktop:(px-30 pb-25)"
         :class="[imageClass]"
       >
         <div class="glowing-circle" />
         <h1 class="font-800 text-6 leading-6 md:(text-9 leading-9) lg:(text-12 leading-12) desktop:(text-16 leading-16)">
           <slot name="title" />
         </h1>
+
+        <UiButton class="w-40! lg:hidden" size="small" @click="toggleOrderModal">
+          ЗАДАТЬ ВОПРОС
+        </UiButton>
+
+        <UiButton class="hidden! lg:flex! font-500! h-10! xl:(w-60! h-12.5! text-5!)" @click="toggleOrderModal">
+          ЗАДАТЬ ВОПРОС
+        </UiButton>
       </div>
     </header>
 
@@ -47,6 +58,10 @@ const imageClass = computed(() => {
 
     <Transition name="slide">
       <LazySidebar v-if="showSidebar" />
+    </Transition>
+
+    <Transition name="fade" mode="out-in">
+      <LazyOrderModal v-if="showOrderModal" />
     </Transition>
   </div>
 </template>

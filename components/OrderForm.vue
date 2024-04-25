@@ -25,7 +25,7 @@ async function makeOrder() {
   >
     <div class="flex items-center text-white font-700 text-4 leading-5 lg:(text-6 leading-7)">
       <template v-if="!showSuccess">
-        Мы готовы помочь вам<br class="md:hidden">воплотить идеи в реальность
+        Мы готовы помочь вам<br class="md:hidden"> воплотить идеи в реальность
       </template>
 
       <template v-else>

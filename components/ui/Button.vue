@@ -29,6 +29,11 @@ const buttonStyle = computed(() => {
     result['bg-primary'] = true
     result['text-white'] = true
     result['primary-hover'] = true
+  } else if (color.value === 'outline') {
+    result['bg-transparent'] = true
+    result['text-white'] = true
+    result['border! border-solid border-white'] = true
+    result['hover:(border-primary)'] = true
   } else {
     result['bg-white'] = true
     result['text-black'] = true

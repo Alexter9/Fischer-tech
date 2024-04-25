@@ -8,8 +8,8 @@ const items = [
 
 <template>
   <article class="laptops flex flex-col gap-8 text-secondary font-500 leading-6 desktop:(gap-10)">
-    <h3 class="text-white text-6 font-700 text-left desktop:(text-24 leading-24)">
-      Системы автоматизации
+    <h3 class="text-white text-6 font-700 text-left desktop:(text-20 leading-20)">
+      Системы<br class="hidden desktop:inline"> автоматизации<br class="hidden desktop:inline"> бизнеса
     </h3>
 
     <div class="flex flex-col gap-8 desktop:(w-50% pb-40)">
@@ -30,6 +30,16 @@ const items = [
           {{ item }}
         </div>
       </div>
+
+      <UiButton href="/services/business-automation" class="w-40! lg:hidden gap-2" color="outline" size="small">
+        ПОДРОБНЕЕ
+        <UiIcon name="arrow" class="h-5" />
+      </UiButton>
+
+      <UiButton href="/services/business-automation" class="hidden! gap-2 lg:flex! mt-10 font-500! h-10! xl:(w-60! h-12.5! text-5!)" color="outline">
+        ПОДРОБНЕЕ
+        <UiIcon name="arrow" class="h-8" />
+      </UiButton>
     </div>
   </article>
 </template>

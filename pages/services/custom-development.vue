@@ -83,7 +83,7 @@ const benefits = [
 <template>
   <NuxtLayout name="services">
     <template #title>
-      <div class="pb-7">
+      <div>
         Заказная<br>разработка
       </div>
     </template>

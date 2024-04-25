@@ -1,7 +1,7 @@
 <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g opacity="0.9">
-    <path d="M14.875 36.125L35.7 15.3" stroke="#413ECE" stroke-width="3" stroke-linecap="square"
+    <path d="M14.875 36.125L35.7 15.3" stroke="currentColor" stroke-width="3" stroke-linecap="square"
       stroke-linejoin="round" />
-    <path d="M14.875 14.875H36.125V36.125" stroke="#413ECE" stroke-width="3" stroke-linecap="square" />
+    <path d="M14.875 14.875H36.125V36.125" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
   </g>
 </svg>
