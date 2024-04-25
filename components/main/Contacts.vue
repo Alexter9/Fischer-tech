@@ -7,8 +7,13 @@ const itemsLeft = [
     nowrap: true,
   },
   {
+    heading: 'telegram',
+    text: '@FischerTech',
+    link: 'https://t.me/FischerTech',
+  },
+  {
     heading: 'Москва',
-    text: 'Пресненская наб., 12, 123317',
+    text: 'Пресненская наб., 12, офис 3/64, 123317',
   },
 ]
 
@@ -20,24 +25,19 @@ const itemsRight = [
     nowrap: true,
   },
   {
-    heading: 'telegram',
-    text: '@FischerTech',
-    link: 'https://t.me/FischerTech',
-  },
-  // {
-  //   heading: '',
-  //   text: 'whatsapp',
-  // },
-  {
     heading: 'linkedin',
     text: 'Перейти',
     link: 'https://www.linkedin.com/company/fischer-tech',
+  },
+  {
+    heading: '',
+    text: 'ООО «ФИШЕР ТЕХ»<br>ИНН 9703160460<br>КПП 770301001<br>ОГРН 1237700766456',
   },
 ]
 </script>
 
 <template>
-  <section class="w-full flex flex-col items-center gap-8 px-5 desktop:(items-start gap-10 px-15 gap-25) max-w-[1440px] self-center">
+  <section class="w-full flex flex-col items-center gap-8 px-6 md:px-21 desktop:(items-start gap-10 px-15 gap-20) max-w-[1440px] self-center">
     <h2 class="text-white text-6.5 font-700 text-center desktop:(text-left text-16 leading-20)">
       Контакты
     </h2>
@@ -62,7 +62,7 @@ const itemsRight = [
             </h5>
 
             <a v-if="item.link" :href="item.link"> {{ item.text }}</a>
-            <span v-else>{{ item.text }}</span>
+            <span v-else v-html="item.text" />
           </div>
         </div>
       </div>

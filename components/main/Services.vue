@@ -19,7 +19,7 @@ const currentTab = ref(tabs[0].id)
 </script>
 
 <template>
-  <section class="w-full flex flex-col items-center gap-10 px-5 desktop:(items-start px-15 gap-25) max-w-[1440px] self-center">
+  <section class="w-full flex flex-col items-center gap-10 px-6 md:px-21 desktop:(items-start px-15 gap-20) max-w-[1440px] self-center">
     <h2 class="text-white text-6.5 font-700 text-center desktop:(text-16 leading-20 text-left )">
       Выполняем <span class="text-gradient">самый полный</span> <br class="hidden desktop:inline"> перечень услуг
     </h2>

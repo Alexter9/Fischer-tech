@@ -1,6 +1,4 @@
 <script setup>
-import { useAppStore } from '~/stores/appStore'
-
 const { toggleOrderModal } = useAppStore()
 
 const tags = [
@@ -14,7 +12,7 @@ const tags = [
 
 <template>
   <header class="flex flex-col gap-6 text-center items-center pt-5 md:(pt-0 gap-0)">
-    <div class="flex flex-col items-center gap-8 px-5 md:(px-10 mb-10) lg:(mb-15) xl:mb-8">
+    <div class="flex flex-col items-center gap-8 px-6 md:(px-10 mb-10) lg:(mb-15) xl:mb-8">
       <h1 class="font-700 text-7 md:(text-10) lg:text-12 xl:(text-16 leading-20)">
         УЛУЧШИМ РЕЗУЛЬТАТЫ
         <br>
@@ -93,12 +91,12 @@ const tags = [
     <div class="hand-background h-45 sm:h-60" />
 
     <div class="infinite-scroll md:hidden!">
-      <div class="scroll-container flex gap-1">
+      <div class="scroll-container flex gap-2">
         <MainTag v-for="tag in tags" :key="tag">
           {{ tag }}
         </MainTag>
       </div>
-      <div class="scroll-container flex gap-1">
+      <div class="scroll-container flex gap-2">
         <MainTag v-for="tag in tags" :key="tag">
           {{ tag }}
         </MainTag>

@@ -1,7 +1,5 @@
 <script setup>
-import { useAppStore } from '~/stores/appStore'
-
-const { showOrderModal } = storeToRefs(useAppStore())
+const { showOrderModal, showSidebar } = storeToRefs(useAppStore())
 </script>
 
 <template>
@@ -9,6 +7,10 @@ const { showOrderModal } = storeToRefs(useAppStore())
     <Navbar />
     <slot />
     <Footer class="mt-6 desktop:mt-40" />
+
+    <Transition name="slide">
+      <LazySidebar v-if="showSidebar" />
+    </Transition>
 
     <Transition name="fade" mode="out-in">
       <LazyOrderModal v-if="showOrderModal" />
@@ -26,5 +28,15 @@ const { showOrderModal } = storeToRefs(useAppStore())
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-100%);
 }
 </style>

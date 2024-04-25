@@ -9,12 +9,12 @@ const items = [
 <template>
   <article class="laptops flex flex-col gap-8 text-secondary font-500 leading-6 desktop:(gap-10)">
     <h3 class="text-white text-6 font-700 text-left desktop:(text-24 leading-24)">
-      Система автоматизации
+      Системы автоматизации
     </h3>
 
     <div class="flex flex-col gap-8 desktop:(w-50% pb-40)">
       <p class="desktop:(text-5 leading-6 font-600)">
-        Уже 10 лет наша команда занимается разработкой систем автоматизации бизнес процессов различной сложности. За годы работы мы сформировали внутри нашей команды сильную экспертизу в таких сферах как:<br>Retail, E-Commerce, PropTech, FinTech, AgroTech
+        Уже 10 лет наша команда занимается разработкой систем автоматизации бизнес-процессов различной сложности. За годы работы мы сформировали внутри нашей команды сильную экспертизу в таких сферах, как<br>Retail, E-Commerce, PropTech, FinTech, AgroTech
       </p>
 
       <p class="desktop:(text-5 leading-6 font-600)">

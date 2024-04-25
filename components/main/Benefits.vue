@@ -4,7 +4,7 @@
 
 <template>
   <section class="benefits flex flex justify-center">
-    <div class="laptop-background relative max-w-[1440px] flex flex-col py-8 px-5 text-center md:(px-15 text-left)">
+    <div class="laptop-background relative max-w-[1440px] flex flex-col py-8 px-6 text-center md:(px-21 text-left)">
       <h2 class="text-white text-6.5 font-700 md:(text-left text-7) desktop:(text-10)">
         Чем мы занимаемся
       </h2>

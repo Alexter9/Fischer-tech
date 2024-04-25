@@ -33,7 +33,7 @@
 </script>
 
 <template>
-  <section class="w-full flex flex-col items-center gap-8 px-5 desktop:(items-start gap-10 px-15 gap-25) max-w-[1440px] self-center">
+  <section class="w-full flex flex-col items-center gap-8 px-6 md:px-21 desktop:(items-start gap-10 px-15 gap-20) max-w-[1440px] self-center">
     <h2 class="text-white text-6.5 font-700 text-center desktop:(text-left text-16 leading-20)">
       Наш подход
     </h2>
@@ -44,7 +44,7 @@
         <div class="flex flex-col gap-4 font-500 desktop:(text-6 leading-12)">
           <h4>Управление проектами</h4>
           <p class="text-secondary desktop:(text-5 leading-6 font-500)">
-            Agile и Scrum, для обеспечения максимальной эффективности и гибкости
+            Agile и Scrum для обеспечения максимальной эффективности и гибкости
           </p>
         </div>
       </article>

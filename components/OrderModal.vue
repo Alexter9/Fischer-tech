@@ -1,11 +1,7 @@
 <script setup>
-import { useAppStore } from '~/stores/appStore'
 import sendMessage from '~/utils/sendMessage'
 
-const appStore = useAppStore()
-
-const { showOrderModal } = storeToRefs(appStore)
-const { toggleOrderModal } = appStore
+const { toggleOrderModal } = useAppStore()
 
 const showSuccess = ref(false)
 
@@ -23,7 +19,7 @@ async function makeOrder() {
 
 <template>
   <div
-    class="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center px-5 bg-secondary bg-opacity-15 backdrop-blur-sm"
+    class="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 bg-secondary bg-opacity-15 backdrop-blur-sm"
     @click.stop="toggleOrderModal"
   >
     <form
@@ -53,7 +49,7 @@ async function makeOrder() {
       </p>
 
       <div v-if="!showSuccess" class="flex flex-col gap-4">
-        <UiInput v-model="orderData.name" required placeholder="Ваше имя" />
+        <UiInput v-model="orderData.name" required placeholder="Имя" />
         <UiInput v-model="orderData.email" required placeholder="Email" />
         <UiTextArea v-model="orderData.text" placeholder="Комментарий" />
 
